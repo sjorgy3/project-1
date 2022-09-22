@@ -16,6 +16,11 @@ CMakeFiles/project_1.dir/ColonDashAutomaton.cpp.obj: ../ColonDashAutomaton.cpp
 CMakeFiles/project_1.dir/ColonDashAutomaton.cpp.obj: ../ColonDashAutomaton.h
 CMakeFiles/project_1.dir/ColonDashAutomaton.cpp.obj: ../Token.h
 
+CMakeFiles/project_1.dir/CommaAutomaton.cpp.obj: ../Automaton.h
+CMakeFiles/project_1.dir/CommaAutomaton.cpp.obj: ../CommaAutomaton.cpp
+CMakeFiles/project_1.dir/CommaAutomaton.cpp.obj: ../CommaAutomaton.h
+CMakeFiles/project_1.dir/CommaAutomaton.cpp.obj: ../Token.h
+
 CMakeFiles/project_1.dir/CommentAutomaton.cpp.obj: ../Automaton.h
 CMakeFiles/project_1.dir/CommentAutomaton.cpp.obj: ../CommentAutomaton.cpp
 CMakeFiles/project_1.dir/CommentAutomaton.cpp.obj: ../CommentAutomaton.h

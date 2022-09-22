@@ -223,6 +223,33 @@ ColonDashAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/ColonDashAutomaton.cpp.s
 .PHONY : ColonDashAutomaton.cpp.s
 
+CommaAutomaton.obj: CommaAutomaton.cpp.obj
+
+.PHONY : CommaAutomaton.obj
+
+# target to build an object file
+CommaAutomaton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/CommaAutomaton.cpp.obj
+.PHONY : CommaAutomaton.cpp.obj
+
+CommaAutomaton.i: CommaAutomaton.cpp.i
+
+.PHONY : CommaAutomaton.i
+
+# target to preprocess a source file
+CommaAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/CommaAutomaton.cpp.i
+.PHONY : CommaAutomaton.cpp.i
+
+CommaAutomaton.s: CommaAutomaton.cpp.s
+
+.PHONY : CommaAutomaton.s
+
+# target to generate assembly for a file
+CommaAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/CommaAutomaton.cpp.s
+.PHONY : CommaAutomaton.cpp.s
+
 CommentAutomaton.obj: CommentAutomaton.cpp.obj
 
 .PHONY : CommentAutomaton.obj
@@ -700,6 +727,9 @@ help:
 	@echo ... ColonDashAutomaton.obj
 	@echo ... ColonDashAutomaton.i
 	@echo ... ColonDashAutomaton.s
+	@echo ... CommaAutomaton.obj
+	@echo ... CommaAutomaton.i
+	@echo ... CommaAutomaton.s
 	@echo ... CommentAutomaton.obj
 	@echo ... CommentAutomaton.i
 	@echo ... CommentAutomaton.s

@@ -103,6 +103,12 @@
 		<Unit filename="C:/Users/18017/CS236/project-1/ColonDashAutomaton.h">
 			<Option target="project_1"/>
 		</Unit>
+		<Unit filename="C:/Users/18017/CS236/project-1/CommaAutomaton.cpp">
+			<Option target="project_1"/>
+		</Unit>
+		<Unit filename="C:/Users/18017/CS236/project-1/CommaAutomaton.h">
+			<Option target="project_1"/>
+		</Unit>
 		<Unit filename="C:/Users/18017/CS236/project-1/CommentAutomaton.cpp">
 			<Option target="project_1"/>
 		</Unit>

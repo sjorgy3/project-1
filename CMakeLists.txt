@@ -11,6 +11,8 @@ add_executable(project_1
         ColonAutomaton.h
         ColonDashAutomaton.cpp
         ColonDashAutomaton.h
+        CommaAutomaton.h
+        CommaAutomaton.cpp
         Lexer.cpp
         Lexer.h
         main.cpp
