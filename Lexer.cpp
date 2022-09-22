@@ -1,9 +1,12 @@
 #include "Lexer.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+#include "CommaAutomaton.h"
+#include "on.h"
 
 Lexer::Lexer() {
     CreateAutomata();
+
 }
 
 Lexer::~Lexer() {
@@ -13,6 +16,21 @@ Lexer::~Lexer() {
 void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new CommaAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
+
     // TODO: Add the other needed automata here
 }
 
