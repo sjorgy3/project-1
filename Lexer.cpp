@@ -2,7 +2,6 @@
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
 #include "CommaAutomaton.h"
-#include "on.h"
 #include "PeriodAutomaton.h"
 #include "Q_MarkAutomaton.h"
 #include "Left_ParenAutomaton.h"
