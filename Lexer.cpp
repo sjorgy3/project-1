@@ -3,6 +3,21 @@
 #include "ColonDashAutomaton.h"
 #include "CommaAutomaton.h"
 #include "on.h"
+#include "PeriodAutomaton.h"
+#include "Q_MarkAutomaton.h"
+#include "Left_ParenAutomaton.h"
+#include "Right_ParenAutomaton.h"
+#include "MultiplyAutomaton.h"
+#include "AddAutomaton.h"
+#include "SchemesAutomaton.h"
+#include "FactsAutomaton.h"
+#include "RulesAutomaton.h"
+#include "QueriesAutomaton.h"
+#include "IDAutomaton.h"
+#include "StringAutomaton.h"
+#include "CommentAutomaton.h"
+#include "UndefinedAutomaton.h"
+#include "EOFAutomaton.h"
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -17,19 +32,21 @@ void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
     automata.push_back(new CommaAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new PeriodAutomaton());
+    automata.push_back(new Q_MarkAutomaton());
+    automata.push_back(new Left_ParenAutomaton());
+    automata.push_back(new Right_ParenAutomaton());
+    automata.push_back(new MultiplyAutomaton());
+    automata.push_back(new AddAutomaton());
+    automata.push_back(new SchemesAutomaton());
+    automata.push_back(new FactsAutomaton());
+    automata.push_back(new RulesAutomaton());
+    automata.push_back(new QueriesAutomaton());
+    automata.push_back(new IDAutomaton());
+    automata.push_back(new StringAutomaton());
+    automata.push_back(new CommentAutomaton());
+    automata.push_back(new UndefinedAutomaton());
+    automata.push_back(new EOFAutomaton());
 
     // TODO: Add the other needed automata here
 }

@@ -5,7 +5,7 @@
 #ifndef PROJECT_1_COMMAAUTOMATON_H
 #define PROJECT_1_COMMAAUTOMATON_H
 
-
+#include "Automaton.h"
 
 class CommaAutomaton : public Automaton
 {
