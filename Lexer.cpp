@@ -17,6 +17,8 @@
 #include "CommentAutomaton.h"
 #include "UndefinedAutomaton.h"
 #include "EOFAutomaton.h"
+#include <iostream>
+using namespace std;
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -52,6 +54,21 @@ void Lexer::CreateAutomata() {
 
 void Lexer::Run(std::string& input) {
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
+    cout << input << endl;
+    int lineNumber = 1;
+    int inputRead = 0;
+    int maxRead;
+    Automaton * maxAutomatonation;
+    while (input.size() > 0){
+        maxRead = 0;
+        maxAutomatonation = automata.at(0);
+        for(int i = 0; i < (int)automata.size(); i++){
+            inputRead = automata.at(i)->Start(input);
+
+        }
+    }
+
+
     /*
     set lineNumber to 1
     // While there are more characters to tokenize
@@ -60,6 +77,8 @@ void Lexer::Run(std::string& input) {
         set maxAutomaton to the first automaton in automata
 
         // TODO: you need to handle whitespace inbetween tokens
+
+
 
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
