@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/18017/CS236/project-1/IDAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/IDAutomaton.cpp.obj"
   "C:/Users/18017/CS236/project-1/Left_ParenAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/Left_ParenAutomaton.cpp.obj"
   "C:/Users/18017/CS236/project-1/Lexer.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/Lexer.cpp.obj"
+  "C:/Users/18017/CS236/project-1/LineCommentAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.obj"
   "C:/Users/18017/CS236/project-1/MultiplyAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/MultiplyAutomaton.cpp.obj"
   "C:/Users/18017/CS236/project-1/PeriodAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/PeriodAutomaton.cpp.obj"
   "C:/Users/18017/CS236/project-1/Q_MarkAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/Q_MarkAutomaton.cpp.obj"

@@ -412,6 +412,33 @@ Lexer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
 
+LineCommentAutomaton.obj: LineCommentAutomaton.cpp.obj
+
+.PHONY : LineCommentAutomaton.obj
+
+# target to build an object file
+LineCommentAutomaton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.obj
+.PHONY : LineCommentAutomaton.cpp.obj
+
+LineCommentAutomaton.i: LineCommentAutomaton.cpp.i
+
+.PHONY : LineCommentAutomaton.i
+
+# target to preprocess a source file
+LineCommentAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.i
+.PHONY : LineCommentAutomaton.cpp.i
+
+LineCommentAutomaton.s: LineCommentAutomaton.cpp.s
+
+.PHONY : LineCommentAutomaton.s
+
+# target to generate assembly for a file
+LineCommentAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.s
+.PHONY : LineCommentAutomaton.cpp.s
+
 MultiplyAutomaton.obj: MultiplyAutomaton.cpp.obj
 
 .PHONY : MultiplyAutomaton.obj
@@ -775,6 +802,9 @@ help:
 	@echo ... Lexer.obj
 	@echo ... Lexer.i
 	@echo ... Lexer.s
+	@echo ... LineCommentAutomaton.obj
+	@echo ... LineCommentAutomaton.i
+	@echo ... LineCommentAutomaton.s
 	@echo ... MultiplyAutomaton.obj
 	@echo ... MultiplyAutomaton.i
 	@echo ... MultiplyAutomaton.s

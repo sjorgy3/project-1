@@ -145,6 +145,12 @@
 		<Unit filename="C:/Users/18017/CS236/project-1/Lexer.h">
 			<Option target="project_1"/>
 		</Unit>
+		<Unit filename="C:/Users/18017/CS236/project-1/LineCommentAutomaton.cpp">
+			<Option target="project_1"/>
+		</Unit>
+		<Unit filename="C:/Users/18017/CS236/project-1/LineCommentAutomaton.h">
+			<Option target="project_1"/>
+		</Unit>
 		<Unit filename="C:/Users/18017/CS236/project-1/MultiplyAutomaton.cpp">
 			<Option target="project_1"/>
 		</Unit>

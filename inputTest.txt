@@ -1,7 +1,6 @@
-
 Queries:
-   marriedTo ('Bea' , 'Zed')?
-
-Rules:
-   marriedTo( X,Y ) :- marriedTo(Y,X) .
-
+IsInRoomAtDH('Snoopy',R,'M',H)
+#SchemesFactsRules<
+.
+#|comment >=
+wow|#

@@ -18,6 +18,7 @@
 #include "UndefinedAutomaton.h"
 #include "EOFAutomaton.h"
 #include "WhiteSpaceAutomaton.h"
+#include "LineCommentAutomaton.h"
 #include <iostream>
 using namespace std;
 
@@ -50,6 +51,7 @@ void Lexer::CreateAutomata() {
     automata.push_back(new UndefinedAutomaton());
     automata.push_back(new EOFAutomaton());
     automata.push_back(new WhiteSpaceAutomaton());
+    automata.push_back(new LineCommentAutomaton());
 
     // TODO: Add the other needed automata here
 }

@@ -55,6 +55,7 @@ std::string Token::tokenToSTring(TokenType type) {
         case TokenType::UNDEFINED: return "UNDEFINED"; break;
         case TokenType::EOF_TOKEN: return "EOF"; break;
         case TokenType::WHITESPACE: return "WHITESPACE"; break;
+        case TokenType::LINECOMMENT: return "COMMENT"; break;
 
 
     }
