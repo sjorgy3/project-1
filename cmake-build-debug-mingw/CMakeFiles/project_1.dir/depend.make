@@ -68,6 +68,7 @@ CMakeFiles/project_1.dir/Lexer.cpp.obj: ../SchemesAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../StringAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../Token.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../UndefinedAutomaton.h
+CMakeFiles/project_1.dir/Lexer.cpp.obj: ../WhiteSpaceAutomaton.h
 
 CMakeFiles/project_1.dir/MultiplyAutomaton.cpp.obj: ../Automaton.h
 CMakeFiles/project_1.dir/MultiplyAutomaton.cpp.obj: ../MultiplyAutomaton.cpp
@@ -109,6 +110,8 @@ CMakeFiles/project_1.dir/StringAutomaton.cpp.obj: ../StringAutomaton.cpp
 CMakeFiles/project_1.dir/StringAutomaton.cpp.obj: ../StringAutomaton.h
 CMakeFiles/project_1.dir/StringAutomaton.cpp.obj: ../Token.h
 
+CMakeFiles/project_1.dir/Token.cpp.obj: ../Automaton.h
+CMakeFiles/project_1.dir/Token.cpp.obj: ../Lexer.h
 CMakeFiles/project_1.dir/Token.cpp.obj: ../Token.cpp
 CMakeFiles/project_1.dir/Token.cpp.obj: ../Token.h
 
@@ -116,6 +119,11 @@ CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj: ../Automaton.h
 CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj: ../Token.h
 CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj: ../UndefinedAutomaton.cpp
 CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj: ../UndefinedAutomaton.h
+
+CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj: ../Automaton.h
+CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj: ../Token.h
+CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj: ../WhiteSpaceAutomaton.cpp
+CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj: ../WhiteSpaceAutomaton.h
 
 CMakeFiles/project_1.dir/main.cpp.obj: ../Automaton.h
 CMakeFiles/project_1.dir/main.cpp.obj: ../Lexer.h

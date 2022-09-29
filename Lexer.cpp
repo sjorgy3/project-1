@@ -17,6 +17,7 @@
 #include "CommentAutomaton.h"
 #include "UndefinedAutomaton.h"
 #include "EOFAutomaton.h"
+#include "WhiteSpaceAutomaton.h"
 #include <iostream>
 using namespace std;
 
@@ -48,64 +49,66 @@ void Lexer::CreateAutomata() {
     automata.push_back(new CommentAutomaton());
     automata.push_back(new UndefinedAutomaton());
     automata.push_back(new EOFAutomaton());
+    automata.push_back(new WhiteSpaceAutomaton());
 
     // TODO: Add the other needed automata here
 }
 
 void Lexer::Run(std::string& input) {
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
-    cout << input << endl;
     int lineNumber = 1;
     int inputRead = 0;
     int maxRead;
+    Token * undefined;
     Automaton * maxAutomatonation;
+    Token * newToken;
+    Token * EOFToken;
+
     while (input.size() > 0){
         maxRead = 0;
         maxAutomatonation = automata.at(0);
         for(int i = 0; i < (int)automata.size(); i++){
             inputRead = automata.at(i)->Start(input);
-
-        }
-    }
-
-
-    /*
-    set lineNumber to 1
-    // While there are more characters to tokenize
-    loop while input.size() > 0 {
-        set maxRead to 0
-        set maxAutomaton to the first automaton in automata
-
-        // TODO: you need to handle whitespace inbetween tokens
-
-
-
-        // Here is the "Parallel" part of the algorithm
-        //   Each automaton runs with the same input
-        foreach automaton in automata {
-            inputRead = automaton.Start(input)
             if (inputRead > maxRead) {
-                set maxRead to inputRead
-                set maxAutomaton to automaton
+                maxRead = inputRead;
+                maxAutomatonation = automata.at(i);
+
             }
+
+
         }
-        // Here is the "Max" part of the algorithm
-        if maxRead > 0 {
-            set newToken to maxAutomaton.CreateToken(...)
-                increment lineNumber by maxAutomaton.NewLinesRead()
-                add newToken to collection of all tokens
+        if (maxRead > 0) {
+            newToken = maxAutomatonation->CreateToken(input.substr(0,maxRead),lineNumber);
+            lineNumber = lineNumber + maxAutomatonation->NewLinesRead();
+            if(newToken->getType() != TokenType::WHITESPACE){
+                tokens.push_back(newToken);
+            }
+
+
         }
-        // No automaton accepted input
-        // Create single character undefined token
-        else {
-            set maxRead to 1
-                set newToken to a  new undefined Token
-                (with first character of input)
-                add newToken to collection of all tokens
+
+
+        else{
+
+            maxRead = 1;
+            newToken = new Token(TokenType:: UNDEFINED, input.substr(0,1), lineNumber+maxAutomatonation->NewLinesRead());
+            tokens.push_back(newToken);
+
         }
-        // Update `input` by removing characters read to create Token
-        remove maxRead characters from input
+        input.erase(input.begin(),input.begin() + maxRead);
+
+
+
     }
-    add end of file token to all tokens
-    */
+    EOFToken = new Token(TokenType:: EOF_TOKEN, "", lineNumber);
+    tokens.push_back(EOFToken);
+
+    for (int i = 0; i < tokens.size(); i++){
+        tokens.at(i)->ToString();
+
+    }
+
+    cout<<"Total Tokens = " << tokens.size();
+
+
 }

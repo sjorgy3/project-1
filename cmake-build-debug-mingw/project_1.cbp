@@ -205,6 +205,12 @@
 		<Unit filename="C:/Users/18017/CS236/project-1/UndefinedAutomaton.h">
 			<Option target="project_1"/>
 		</Unit>
+		<Unit filename="C:/Users/18017/CS236/project-1/WhiteSpaceAutomaton.cpp">
+			<Option target="project_1"/>
+		</Unit>
+		<Unit filename="C:/Users/18017/CS236/project-1/WhiteSpaceAutomaton.h">
+			<Option target="project_1"/>
+		</Unit>
 		<Unit filename="C:/Users/18017/CS236/project-1/main.cpp">
 			<Option target="project_1"/>
 		</Unit>

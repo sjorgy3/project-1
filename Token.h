@@ -21,18 +21,28 @@ enum class TokenType {
     STRING,
 
     // TODO: add the other types of tokens
-    UNDEFINED
+    UNDEFINED, COMMA, EOF_TOKEN, WHITESPACE
 };
+
 
 class Token
 {
 private:
     // TODO: add member variables for information needed by Token
+    TokenType token;
+    std::string textDescription;
+    int tokenLine = 0;
 
 public:
     Token(TokenType type, std::string description, int line);
 
-    // TODO: add other needed methods
+    void ToString();
+    TokenType getType();
+    std::string getdescription();
+    int getLine();
+    std::string tokenToSTring(TokenType type);
+
+
 };
 
 #endif // TOKEN_H

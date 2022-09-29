@@ -682,6 +682,33 @@ UndefinedAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.s
 .PHONY : UndefinedAutomaton.cpp.s
 
+WhiteSpaceAutomaton.obj: WhiteSpaceAutomaton.cpp.obj
+
+.PHONY : WhiteSpaceAutomaton.obj
+
+# target to build an object file
+WhiteSpaceAutomaton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj
+.PHONY : WhiteSpaceAutomaton.cpp.obj
+
+WhiteSpaceAutomaton.i: WhiteSpaceAutomaton.cpp.i
+
+.PHONY : WhiteSpaceAutomaton.i
+
+# target to preprocess a source file
+WhiteSpaceAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.i
+.PHONY : WhiteSpaceAutomaton.cpp.i
+
+WhiteSpaceAutomaton.s: WhiteSpaceAutomaton.cpp.s
+
+.PHONY : WhiteSpaceAutomaton.s
+
+# target to generate assembly for a file
+WhiteSpaceAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_1.dir\build.make CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.s
+.PHONY : WhiteSpaceAutomaton.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -778,6 +805,9 @@ help:
 	@echo ... UndefinedAutomaton.obj
 	@echo ... UndefinedAutomaton.i
 	@echo ... UndefinedAutomaton.s
+	@echo ... WhiteSpaceAutomaton.obj
+	@echo ... WhiteSpaceAutomaton.i
+	@echo ... WhiteSpaceAutomaton.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -69,6 +69,7 @@ CMakeFiles/project_1.dir/Lexer.cpp.obj
  C:/Users/18017/CS236/project-1/StringAutomaton.h
  C:/Users/18017/CS236/project-1/Token.h
  C:/Users/18017/CS236/project-1/UndefinedAutomaton.h
+ C:/Users/18017/CS236/project-1/WhiteSpaceAutomaton.h
 CMakeFiles/project_1.dir/MultiplyAutomaton.cpp.obj
  C:/Users/18017/CS236/project-1/Automaton.h
  C:/Users/18017/CS236/project-1/MultiplyAutomaton.cpp
@@ -110,6 +111,8 @@ CMakeFiles/project_1.dir/StringAutomaton.cpp.obj
  C:/Users/18017/CS236/project-1/StringAutomaton.h
  C:/Users/18017/CS236/project-1/Token.h
 CMakeFiles/project_1.dir/Token.cpp.obj
+ C:/Users/18017/CS236/project-1/Automaton.h
+ C:/Users/18017/CS236/project-1/Lexer.h
  C:/Users/18017/CS236/project-1/Token.cpp
  C:/Users/18017/CS236/project-1/Token.h
 CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj
@@ -117,6 +120,11 @@ CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj
  C:/Users/18017/CS236/project-1/Token.h
  C:/Users/18017/CS236/project-1/UndefinedAutomaton.cpp
  C:/Users/18017/CS236/project-1/UndefinedAutomaton.h
+CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj
+ C:/Users/18017/CS236/project-1/Automaton.h
+ C:/Users/18017/CS236/project-1/Token.h
+ C:/Users/18017/CS236/project-1/WhiteSpaceAutomaton.cpp
+ C:/Users/18017/CS236/project-1/WhiteSpaceAutomaton.h
 CMakeFiles/project_1.dir/main.cpp.obj
  C:/Users/18017/CS236/project-1/Automaton.h
  C:/Users/18017/CS236/project-1/Lexer.h

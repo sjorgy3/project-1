@@ -18,7 +18,7 @@ public:
     IDAutomaton() : Automaton(TokenType::ID
     ) {}  // Call the base constructor
 
-    void S0(const std::string& input);
+    void S0(const std::string& input)override;
 };
 
 

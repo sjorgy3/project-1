@@ -17,8 +17,6 @@ int main(int argc, char** argv) {
         str << infile.rdbuf();
         text = str.str();
 
-        cout << text << endl;
-
 
 
     }

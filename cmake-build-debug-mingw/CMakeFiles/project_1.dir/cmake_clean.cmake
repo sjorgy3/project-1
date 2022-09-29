@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_1.dir/StringAutomaton.cpp.obj"
   "CMakeFiles/project_1.dir/Token.cpp.obj"
   "CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj"
+  "CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj"
   "CMakeFiles/project_1.dir/main.cpp.obj"
   "libproject_1.dll.a"
   "project_1.exe"

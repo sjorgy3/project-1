@@ -24,6 +24,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/18017/CS236/project-1/StringAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/StringAutomaton.cpp.obj"
   "C:/Users/18017/CS236/project-1/Token.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/Token.cpp.obj"
   "C:/Users/18017/CS236/project-1/UndefinedAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/UndefinedAutomaton.cpp.obj"
+  "C:/Users/18017/CS236/project-1/WhiteSpaceAutomaton.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/WhiteSpaceAutomaton.cpp.obj"
   "C:/Users/18017/CS236/project-1/main.cpp" "C:/Users/18017/CS236/project-1/cmake-build-debug-mingw/CMakeFiles/project_1.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -17,7 +17,7 @@ private:
 public:
     Left_ParenAutomaton() : Automaton(TokenType::LEFT_PAREN) {}  // Call the base constructor
 
-    void S0(const std::string& input);
+    void S0(const std::string& input)override;
 };
 
 
