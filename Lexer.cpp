@@ -101,7 +101,7 @@ void Lexer::Run(std::string& input) {
 
 
     }
-    EOFToken = new Token(TokenType:: EOF_TOKEN, "", lineNumber);
+    EOFToken = new Token(TokenType:: ENDOFFILE, "", lineNumber);
     tokens.push_back(EOFToken);
 
     for (int i = 0; i < (int)tokens.size(); i++){

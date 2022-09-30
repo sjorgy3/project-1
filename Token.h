@@ -20,7 +20,7 @@ enum class TokenType {
     STRING,
 
     // TODO: add the other types of tokens
-    UNDEFINED, COMMA, EOF_TOKEN, WHITESPACE, LINECOMMENT
+    UNDEFINED, COMMA, WHITESPACE, LINECOMMENT, ENDOFFILE
 };
 
 

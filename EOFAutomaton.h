@@ -15,7 +15,7 @@ private:
     void S1(const std::string& input);
 
 public:
-    EOFAutomaton() : Automaton(TokenType::EOF_TOKEN) {}  // Call the base constructor
+    EOFAutomaton() : Automaton(TokenType::ENDOFFILE) {}  // Call the base constructor
 
     void S0(const std::string& input)override;
 };

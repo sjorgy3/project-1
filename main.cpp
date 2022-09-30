@@ -30,11 +30,6 @@ int main(int argc, char** argv) {
     lexer->Run(text);
 
 
-
-
-
-    // TODO
-
     delete lexer;
 
     return 0;
