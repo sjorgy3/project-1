@@ -61,7 +61,6 @@ void Lexer::Run(std::string& input) {
     int lineNumber = 1;
     int inputRead = 0;
     int maxRead;
-    Token * undefined;
     Automaton * maxAutomatonation;
     Token * newToken;
     Token * EOFToken;
@@ -105,7 +104,7 @@ void Lexer::Run(std::string& input) {
     EOFToken = new Token(TokenType:: EOF_TOKEN, "", lineNumber);
     tokens.push_back(EOFToken);
 
-    for (int i = 0; i < tokens.size(); i++){
+    for (int i = 0; i < (int)tokens.size(); i++){
         tokens.at(i)->ToString();
 
     }

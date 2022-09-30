@@ -15,7 +15,7 @@ void CommentAutomaton::S0(const std::string& input) {
 }
 
 void CommentAutomaton::S1(const std::string& input) {
-    if(index> input.size()-1){
+    if(index > (int)input.size()-1){
         inputRead=0;
     }
     else if (input[index] == '|') {
@@ -29,7 +29,7 @@ void CommentAutomaton::S1(const std::string& input) {
     }
 }
 void CommentAutomaton::S2(const std::string& input){
-    if(index> input.size()-1){
+    if(index> (int)input.size()-1){
         inputRead=0;
     }
     else if (input[index] != '|') {
@@ -47,7 +47,7 @@ void CommentAutomaton::S2(const std::string& input){
     }
 }
 void CommentAutomaton::S3(const std::string& input){
-    if(index> input.size()-1){
+    if(index> (int)input.size()-1){
         inputRead=0;
     }
     else if (input[index] == '#'){

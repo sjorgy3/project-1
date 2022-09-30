@@ -16,7 +16,7 @@ void LineCommentAutomaton::S0(const std::string& input) {
 
 
 void LineCommentAutomaton::S1(const std::string& input){
-    if(index> input.size()-1){
+    if(index> (int)input.size()-1){
         inputRead=0;
     }
     else if (input[index] != '\n') {

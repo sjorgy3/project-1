@@ -7,7 +7,6 @@ enum class TokenType {
     COLON_DASH,
     ADD,
     COMMENT,
-    ENDOFFILE,
     FACTS,
     ID,
     LEFT_PAREN,

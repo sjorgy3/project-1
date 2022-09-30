@@ -58,6 +58,7 @@ CMakeFiles/project_1.dir/Lexer.cpp.obj: ../IDAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../Left_ParenAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../Lexer.cpp
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../Lexer.h
+CMakeFiles/project_1.dir/Lexer.cpp.obj: ../LineCommentAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../MultiplyAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../PeriodAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../Q_MarkAutomaton.h
@@ -69,6 +70,11 @@ CMakeFiles/project_1.dir/Lexer.cpp.obj: ../StringAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../Token.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../UndefinedAutomaton.h
 CMakeFiles/project_1.dir/Lexer.cpp.obj: ../WhiteSpaceAutomaton.h
+
+CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.obj: ../Automaton.h
+CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.obj: ../LineCommentAutomaton.cpp
+CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.obj: ../LineCommentAutomaton.h
+CMakeFiles/project_1.dir/LineCommentAutomaton.cpp.obj: ../Token.h
 
 CMakeFiles/project_1.dir/MultiplyAutomaton.cpp.obj: ../Automaton.h
 CMakeFiles/project_1.dir/MultiplyAutomaton.cpp.obj: ../MultiplyAutomaton.cpp
