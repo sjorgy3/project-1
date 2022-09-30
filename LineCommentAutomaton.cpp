@@ -20,9 +20,14 @@ void LineCommentAutomaton::S1(const std::string& input){
     if(index> (int)input.size()-1){
         return;
     }
-    else if (input[index] != '\n') {
-        inputRead++;
+    else if (input[index] != '\n'){
         index++;
+        inputRead++;
         S1(input);
     }
+    else{
+
+    }
+
+
 }

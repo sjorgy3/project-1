@@ -35,6 +35,9 @@ void CommentAutomaton::S2(const std::string& input){
     else if (input[index] != '|') {
         inputRead++;
         index++;
+        if (input[index] == '\n'){
+            newLines++;
+        }
         S2(input);
     }
     else if (input[index] == '|'){
@@ -49,6 +52,16 @@ void CommentAutomaton::S2(const std::string& input){
 void CommentAutomaton::S3(const std::string& input){
     if(index> (int)input.size()-1){
         inputRead=0;
+    }
+    else if (input[index] == '|'){
+        inputRead++;
+        index++;
+        S3(input);
+    }
+    else if (input[index] != '#'){
+        inputRead++;
+        index++;
+        S2(input);
     }
     else if (input[index] == '#'){
         inputRead++;
