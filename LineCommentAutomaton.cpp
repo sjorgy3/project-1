@@ -20,17 +20,25 @@ void LineCommentAutomaton::S1(const std::string& input){
     if(index == (int)input.size()){
         return;
     }
-
+    else if (input[index] == '|'){
+        Serr();
+    }
     else if (input[index] != '\n'){
         index++;
         inputRead++;
-        S1(input);
+        S2(input);
     }
 
     else{
-
-        return;
+        S2(input);
     }
 
 
+}
+void LineCommentAutomaton::S2(const std::string& input){
+    if (input[index] != '\n'){
+        index++;
+        inputRead++;
+        S2(input);
+    }
 }
