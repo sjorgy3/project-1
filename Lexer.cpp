@@ -109,7 +109,7 @@ void Lexer::Run(std::string& input) {
 
     }
 
-    cout<<"Total Tokens = " << tokens.size();
+    cout<<"Total Tokens = " << (int)tokens.size();
 
 
 }

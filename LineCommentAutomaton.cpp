@@ -9,7 +9,8 @@ void LineCommentAutomaton::S0(const std::string& input) {
         inputRead = 1;
         index++;
         S1(input);
-    } else {
+    }
+    else {
         Serr();
     }
 }
@@ -17,7 +18,7 @@ void LineCommentAutomaton::S0(const std::string& input) {
 
 void LineCommentAutomaton::S1(const std::string& input){
     if(index> (int)input.size()-1){
-        inputRead=0;
+        return;
     }
     else if (input[index] != '\n') {
         inputRead++;

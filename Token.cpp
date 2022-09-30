@@ -36,7 +36,7 @@ int Token::getLine() {
 
 std::string Token::tokenToSTring(TokenType type) {
     switch(type){
-
+        default:
         case TokenType::SCHEMES: return "SCHEMES"; break;
         case TokenType::FACTS: return "FACTS"; break;
         case TokenType::ADD: return "ADD"; break;
@@ -57,9 +57,6 @@ std::string Token::tokenToSTring(TokenType type) {
         case TokenType::ENDOFFILE: return "EOF"; break;
         case TokenType::WHITESPACE: return "WHITESPACE"; break;
         case TokenType::LINECOMMENT: return "COMMENT"; break;
-
-        default:
-            return 0;
     }
 
 }
