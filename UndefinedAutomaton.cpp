@@ -8,7 +8,13 @@ void UndefinedAutomaton::S0(const std::string& input) {
         inputRead = 1;
         index++;
         S1(input);
-    } else {
+    }
+    else if (input[index] == '\'') {
+        inputRead = 1;
+        index++;
+        S5(input);
+    }
+    else {
         Serr();
     }
 }
@@ -32,29 +38,8 @@ void UndefinedAutomaton::S1(const std::string& input) {
     }
 }
 void UndefinedAutomaton::S2(const std::string& input){
-    if(index> (int)input.size()-1){
-        inputRead = input.size()-1;
-    }
-    else if (input[index] != '|') {
-        inputRead++;
-        index++;
-        if (input[index] == '\n'){
-            newLines++;
-        }
-        S2(input);
-    }
-    else if (input[index] == '|'){
-        inputRead++;
-        index++;
-        S3(input);
-    }
-    else {
-        Serr();
-    }
-}
-void UndefinedAutomaton::S3(const std::string& input){
-    if(index> (int)input.size()-1){
-        inputRead = input.size()-1;
+    if(index == (int)input.size()){
+        return;
     }
     else if (input[index] == '\n'){
         inputRead++;
@@ -62,6 +47,34 @@ void UndefinedAutomaton::S3(const std::string& input){
         newLines++;
         S2(input);
     }
+    else if (input[index] != '|') {
+        inputRead++;
+        index++;
+        S2(input);
+    }
+
+    else if (input[index] == '|'){
+        inputRead++;
+        index++;
+
+        S3(input);
+
+    }
+    else {
+        Serr();
+    }
+}
+void UndefinedAutomaton::S3(const std::string& input){
+    if(index> (int)input.size()-1){
+        return;
+    }
+    else if (input[index] == '\n'){
+        inputRead++;
+        index++;
+        newLines++;
+        S2(input);
+    }
+
     else if (input[index] == '|'){
         inputRead++;
         index++;
@@ -75,15 +88,56 @@ void UndefinedAutomaton::S3(const std::string& input){
     else if (input[index] == '#'){
         inputRead++;
         index++;
-        if (input[index] == '\n'){
-            newLines++;
-        }
+
     }
     else{
         Serr();
     }
 
 
+}
+void UndefinedAutomaton::S4(const std::string &input) {
+    if (input[index] == '\'') {
+        inputRead = 1;
+        index++;
+        S1(input);
+    }
+    else {
+        Serr();
+    }
+}
+void UndefinedAutomaton::S5(const std::string& input) {
+
+    if(index> (int)input.size()-1){
+        return;
+    }
+    else if (input[index] == '\n'){
+        inputRead++;
+        index++;
+        newLines++;
+        S5(input);
+    }
+    else if (input[index] == '\'' && input[index+1] == '\'') {
+        inputRead++;
+        inputRead++;
+        index++;
+        index++;
+        S5(input);
+    }
+    else if (input[index] == '\'' && input[index+1] != '\'') {
+        inputRead++;
+        index++;
+
+    }
+    else if (input[index] != '\'' || input[index] != '\n') {
+        inputRead++;
+        index++;
+        S5(input);
+    }
+
+    else {
+        Serr();
+    }
 }
 
 

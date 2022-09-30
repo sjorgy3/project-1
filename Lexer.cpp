@@ -65,9 +65,20 @@ void Lexer::Run(std::string& input) {
     Token * newToken;
     Token * EOFToken;
 
-    while (input.size() > 0){
+    while (!input.empty()){
         maxRead = 0;
         maxAutomatonation = automata.at(0);
+
+        if(isspace(input.front()&& !input.empty())){
+            if(input.front()=='\n'){
+                lineNumber++;
+            }
+            input=input.substr(1);
+            continue;
+        }
+
+
+
         for(int i = 0; i < (int)automata.size(); i++){
             inputRead = automata.at(i)->Start(input);
             if (inputRead > maxRead) {
@@ -93,7 +104,8 @@ void Lexer::Run(std::string& input) {
         else{
 
             maxRead = 1;
-            newToken = new Token(TokenType:: UNDEFINED, input.substr(0,1), lineNumber+maxAutomatonation->NewLinesRead());
+            newToken = new Token(TokenType:: UNDEFINED, input.substr(0,1), lineNumber);
+            lineNumber += maxAutomatonation->NewLinesRead();
             tokens.push_back(newToken);
 
         }
@@ -102,6 +114,7 @@ void Lexer::Run(std::string& input) {
 
 
     }
+
     EOFToken = new Token(TokenType:: ENDOFFILE, "", lineNumber);
     tokens.push_back(EOFToken);
 

@@ -10,16 +10,21 @@ int main(int argc, char** argv) {
 
     ifstream infile(argv[1]);
 
-    string text;
-
-    if (infile.is_open()){
-        stringstream str;
-        str << infile.rdbuf();
-        text = str.str();
-
-
-
+    string text, line;
+    while(getline(infile, line))
+    {
+        text += line + '\n';
     }
+
+//
+//    if (infile.is_open()){
+//        stringstream str;
+//        str << infile.rdbuf();
+//        text = str.str();
+//
+//
+//
+//    }
     infile.close();
 
 
